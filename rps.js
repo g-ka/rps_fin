@@ -7,11 +7,11 @@ let randvar = 0;
     };
 
    // let score = JSON.parse(localStorage.getItem('score')) /*||
-      {
-        won: 0,
-        tie: 0,
-        loss: 0
-      }*/;
+  //    {
+    //    won: 0,
+      //  tie: 0,
+        //loss: 0
+    //  }*/;
     //console.log(JSON.parse(localStorage.getItem('score')));
 
     /*if(!score)
