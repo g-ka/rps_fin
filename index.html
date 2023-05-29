@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rps-dom</title>
+  <link rel="stylesheet" href="stylesheets/rps2.css"> 
+</head>
+<body>
+
+  <p class="rps-p">
+    Rock-Paper-Scissor 
+  </p>
+
+  <div class="buttons">
+    <button class="rock" onclick="randvar = Math.random();
+                                            result('ROCK');">
+    <p>
+      ROCK
+    </p>
+    </button>
+    <button class="paper" onclick="randvar = Math.random();
+                                             result('PAPER');">
+      <p>
+        PAPER
+      </p>
+    </button>
+    <button class="scissor" onclick="randvar = Math.random();
+                                               result('SCISSOR');">
+      <p>
+        SCISSOR
+      </p>
+    </button>
+  </div>
+
+  <p class="js-score"></p>
+
+  <div class="restart">
+    <button class="newgame" onclick="reset();">
+      NEW GAME
+    </button>
+  </div>
+
+  <div class="smicons">
+    <a class="sma" href="#" target="_blank">
+      <span>Facebook:</span>
+      <img class="fb" src="socialmedia-img/facebook.png">
+    </a>
+    <a class="sma" href="https://www.instagram.com/gkapilan/" target="_blank">
+      <span>Instagram:</span>
+      <img class="ig" src="socialmedia-img/instagram.png">
+    </a>
+    <a class="sma" href="https://twitter.com/g_kap_" target="_blank">
+      <span>Twitter:</span>
+      <img class="tw" src="socialmedia-img/twitter.png">
+    </a>
+  </div> 
+  
+  <script src="rps.js"></script>
+
+</body>
+</html>

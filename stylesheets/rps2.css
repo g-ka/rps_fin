@@ -1,0 +1,150 @@
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 1px;
+}
+body{
+  background-color: rgb(25,25,25);
+  min-width: 280px;
+  margin-bottom: 70rem;
+}
+.rps-p{
+  color: white;
+  font-size: 40rem;
+  text-align: center;
+  margin: 30rem 0;
+  text-transform: uppercase;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200rem;
+}
+button{
+  height: 140rem;
+  width: 140rem;
+  border: 3rem solid yellowgreen;
+  border-radius: 70rem;
+  background-color: rgb(25,25,25);
+  cursor: pointer;
+  margin-right: 30rem;
+}
+button:hover{
+  opacity: 0.5;
+}
+button p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140rem;
+  width: 140rem;
+  border-radius: 70rem;
+  color: black;
+  font-size: 25rem;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+button p:hover{
+  opacity: 1;
+}
+.rock{
+  background-image: url(images/rock.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.paper{
+  background-image: url(images/paper.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.scissor{
+  background-image: url(images/scissor.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.js-score{
+  color: white;
+  text-align: center;
+  margin-top: 30rem;
+  line-height: 1.5;
+  margin-right: 30rem;
+  font-size: 20rem;
+}
+.restart{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.newgame{
+  height: 50rem;
+  width: 170rem;
+  border: 3rem solid yellowgreen;
+  border-radius: 10rem;
+  color: white;
+  font-size: 20rem;
+  margin-top: 30rem;
+  font-size: 20rem;
+}
+.smicons{
+  background-color: rgb(153, 149, 149);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8rem;
+  position: fixed;
+  height: 40rem;
+  bottom: 0;
+  padding: 10rem;
+}
+.sma{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+span{
+  font-size: 16rem;
+}
+.fb,.ig,.tw{
+  width: 30rem;
+  height: 30rem;
+  transition: transform 0.15s;
+}
+.fb:hover,.ig:hover,.tw:hover{
+  transform: translate(0,-3rem);
+}
+
+
+/*media queries*/
+
+@media (max-width: 915px)
+{
+  .buttons{
+    flex-direction: column;
+    row-gap: 30rem;
+  }
+}
+@media (max-width: 520px)
+{
+  html{
+    font-size: 0.8px;
+  }
+  .js-score{
+    margin-right: 0;
+    padding: 0 30rem;
+  }
+}
+@media (max-width: 450px)
+{
+  html{
+    font-size: 0.7px;
+  }
+}
