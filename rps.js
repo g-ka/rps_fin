@@ -1,6 +1,6 @@
 let randvar = 0;
 
-     let score = JSON.parse(localStorage.getItem('score')) ||; 
+     let score = JSON.parse(localStorage.getItem('score')) ||
                     {
                       won: 0,
                       tie: 0,
